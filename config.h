@@ -62,8 +62,8 @@ static const char *webBrowser[]  = { "/usr/bin/firefox", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_s,      spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_s,      spawn,          {.v = dmenucmd } },
+	{ MODKEY,                       XK_t,      spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_w,      spawn,          {.v = webBrowser } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
