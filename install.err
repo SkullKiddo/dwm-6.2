@@ -1,0 +1,53 @@
+dwm.c: In function ‘applysizehints’:
+dwm.c:55:57: error: ‘gappx’ undeclared (first use in this function)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:325:14: note: in expansion of macro ‘WIDTH’
+    *x = sw - WIDTH(c);
+              ^~~~~
+dwm.c:55:57: note: each undeclared identifier is reported only once for each function it appears in
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:325:14: note: in expansion of macro ‘WIDTH’
+    *x = sw - WIDTH(c);
+              ^~~~~
+dwm.c: In function ‘configurerequest’:
+dwm.c:55:57: error: ‘gappx’ undeclared (first use in this function)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:608:33: note: in expansion of macro ‘WIDTH’
+     c->x = m->mx + (m->mw / 2 - WIDTH(c) / 2); /* center in x direction */
+                                 ^~~~~
+dwm.c: In function ‘manage’:
+dwm.c:55:57: error: ‘gappx’ undeclared (first use in this function)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:1042:13: note: in expansion of macro ‘WIDTH’
+  if (c->x + WIDTH(c) > c->mon->mx + c->mon->mw)
+             ^~~~~
+dwm.c: In function ‘movemouse’:
+dwm.c:55:57: error: ‘gappx’ undeclared (first use in this function)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:1173:51: note: in expansion of macro ‘WIDTH’
+    else if (abs((selmon->wx + selmon->ww) - (nx + WIDTH(c))) < snap)
+                                                   ^~~~~
+dwm.c: In function ‘resizeclient’:
+dwm.c:1299:16: error: ‘gappx’ undeclared (first use in this function)
+    gapoffset = gappx;
+                ^~~~~
+dwm.c: In function ‘showhide’:
+dwm.c:55:57: error: ‘gappx’ undeclared (first use in this function)
+ #define WIDTH(X)                ((X)->w + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:1651:28: note: in expansion of macro ‘WIDTH’
+   XMoveWindow(dpy, c->win, WIDTH(c) * -2, c->y);
+                            ^~~~~
+dwm.c: In function ‘tile’:
+dwm.c:56:57: error: ‘gappx’ undeclared (first use in this function)
+ #define HEIGHT(X)               ((X)->h + 2 * (X)->bw + gappx)
+                                                         ^
+dwm.c:1715:10: note: in expansion of macro ‘HEIGHT’
+    my += HEIGHT(c);
+          ^~~~~~
+make: *** [dwm.o] Error 1
